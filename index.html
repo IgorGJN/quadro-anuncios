@@ -9,6 +9,11 @@
 <body>
     <div class="container">
         <h1>Tabela de Dias e Nomes</h1>
+        <form id="adicionar-nome-form">
+            <input type="text" id="novo-nome" placeholder="Digite um nome" required>
+            <button type="submit">Adicionar Nome</button>
+        </form>
+
         <table id="tabela">
             <thead>
                 <tr>
@@ -20,24 +25,16 @@
                 <tr>
                     <td>Segunda-feira</td>
                     <td>
-                        <select>
+                        <select class="nome-select">
                             <option value="">Selecione um nome</option>
-                            <option value="João">João</option>
-                            <option value="Maria">Maria</option>
-                            <option value="Carlos">Carlos</option>
-                            <option value="Ana">Ana</option>
                         </select>
                     </td>
                 </tr>
                 <tr>
                     <td>Terça-feira</td>
                     <td>
-                        <select>
+                        <select class="nome-select">
                             <option value="">Selecione um nome</option>
-                            <option value="João">João</option>
-                            <option value="Maria">Maria</option>
-                            <option value="Carlos">Carlos</option>
-                            <option value="Ana">Ana</option>
                         </select>
                     </td>
                 </tr>
