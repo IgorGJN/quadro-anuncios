@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download de Tabela em PDF</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tabela de Dias e Nomes</h1>
+        <table id="tabela">
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Nome</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Segunda-feira</td>
+                    <td>
+                        <select>
+                            <option value="">Selecione um nome</option>
+                            <option value="João">João</option>
+                            <option value="Maria">Maria</option>
+                            <option value="Carlos">Carlos</option>
+                            <option value="Ana">Ana</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Terça-feira</td>
+                    <td>
+                        <select>
+                            <option value="">Selecione um nome</option>
+                            <option value="João">João</option>
+                            <option value="Maria">Maria</option>
+                            <option value="Carlos">Carlos</option>
+                            <option value="Ana">Ana</option>
+                        </select>
+                    </td>
+                </tr>
+                <!-- Adicione mais linhas conforme necessário -->
+            </tbody>
+        </table>
+        <button onclick="baixarPDF()">Baixar PDF</button>
+    </div>
+    <!-- Importando jsPDF e autoTable via CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.28/jspdf.plugin.autotable.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
